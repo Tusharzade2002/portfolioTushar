@@ -1,9 +1,8 @@
 import React from "react";
 import logo from "../assets/WhatsApp  Image 2025-03-17 at 12.05.43 PM.jpeg";
-
-import { AiFillCodepenSquare } from "react-icons/ai";
 import Work from "./Work";
 import Contact from "./Contact";
+import Service from "./Service";
 function Dashboard() {
   return (
     <div style={{ backgroundColor: "#001433", color: "white" }}>
@@ -113,35 +112,8 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* service page */}
-            <div>
-                         <h1 class="text-center font-black text-5xl my-4 ">My Services</h1>
-                         <div class=" flex flex-col sm:flex-row md:mx-5 ">
-                             <div class="m-3 p-2 w-50  bg-blue-950 rounded-md">
-                                <AiFillCodepenSquare size={60} class="text-purple-800 bg-transparent"/>
-                                <h1>Web Design</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quia magnam minus adipisci placeat recusandae hic! Repellat quasi dolores adipisci!</p>
-                                <button class="text-purple-800">Learn More</button>
-                             </div>
-
-                             <div class="m-3 p-2 w-50  bg-blue-950  rounded-md">
-                                <AiFillCodepenSquare size={60} class="text-purple-800 bg-transparent"/>
-                                <h1>Web Design</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quia magnam minus adipisci placeat recusandae hic! Repellat quasi dolores adipisci!</p>
-                                <button class="text-purple-800">Learn More</button>
-                             </div>
-
-                             <div class="m-3 p-2 w-50 bg-blue-950 rounded-md">
-                                <AiFillCodepenSquare size={60} class=" text-purple-800 bg-transparent"/>
-                                <h1>Web Design</h1>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quia magnam minus adipisci placeat recusandae hic! Repellat quasi dolores adipisci!</p>
-                                <button class="text-purple-800">Learn More</button>
-                             </div>
-                         </div>
-            </div>
-
-            {/* my work */}
              <Work/>
+             <Service/>
              <Contact/>
     </div>
   );
