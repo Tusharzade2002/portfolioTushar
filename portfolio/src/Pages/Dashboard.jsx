@@ -4,6 +4,7 @@ import Work from "./Work";
 import Contact from "./Contact";
 import Service from "./Service";
 import About from "./About";
+import Footer from "../Layout/Footer";
 function Dashboard() {
   return (
     <div style={{ backgroundColor: "#001433", color: "white" }}>
@@ -31,6 +32,7 @@ function Dashboard() {
              <Work/>
              <Service/>
              <Contact/>
+             <Footer/>
     </div>
   );
 }
