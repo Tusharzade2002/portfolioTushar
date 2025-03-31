@@ -46,10 +46,10 @@ function Navbar() {
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4 " >
-            <Link class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Portfolio</Link>
-            <Link class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
-            <Link class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Work</Link>
-            <Link class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
+            <Link to="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Portfolio</Link>
+            <Link to="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
+            <Link to="/work" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Work</Link>
+            <Link to="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
           </div>
         </div>
       </div>

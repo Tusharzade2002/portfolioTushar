@@ -32,7 +32,7 @@ function Dashboard() {
              <Work/>
              <Service/>
              <Contact/>
-             <Footer/>
+            
     </div>
   );
 }

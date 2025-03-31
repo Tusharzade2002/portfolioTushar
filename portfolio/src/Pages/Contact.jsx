@@ -4,8 +4,8 @@ import { MdEmail } from "react-icons/md";
 import { IoLocation } from "react-icons/io5";
 function Contact() {
   return (
-    <div>
-        <h1 class="text-center font-black text-5xl my-4 ">Contact Me</h1>
+    <div style={{backgroundColor:"#001433"}}>
+        <h1 class="text-center font-black text-5xl py-4">Contact Me</h1>
         <p class="p-4 md:p-10 items-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ipsam in nesciunt impedit eius iste accusamus fuga ab officiis eligendi.</p>
         <div class="flex flex-col items-center md:flex-row md:justify-around">
           <div>

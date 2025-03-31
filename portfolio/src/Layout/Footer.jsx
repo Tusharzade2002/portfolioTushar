@@ -6,7 +6,7 @@ import { FaGoogle } from "react-icons/fa6";
 import {Link} from 'react-router-dom'
 function Footer() {
   return (
-    <div className='py-4'>
+    <div className='py-4 text-white'>
          <div class="flex items-center justify-center">
          <IoLogoInstagram  className='mx-4'/>
          <FaFacebook className='mx-4'/>
@@ -14,10 +14,10 @@ function Footer() {
          <FaGoogle className='mx-4'/>
          </div>
          <div class="flex items-center justify-center mt-4">
-            <Link className='mx-4 md:mx-6'>Home</Link>
-            <Link className='mx-4 md:mx-6'>Work</Link>
-            <Link className='mx-4 md:mx-6'>Service</Link>
-            <Link className='mx-4 md:mx-6'>Contact</Link>
+            <Link to="/" className='mx-4 md:mx-6'>Home</Link>
+            <Link to="/work" className='mx-4 md:mx-6'>Work</Link>
+            <Link to="/service" className='mx-4 md:mx-6'>Service</Link>
+            <Link to="/contact" className='mx-4 md:mx-6'>Contact</Link>
          </div>
     </div>
   )
