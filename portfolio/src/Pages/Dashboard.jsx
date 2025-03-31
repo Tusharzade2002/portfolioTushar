@@ -3,6 +3,7 @@ import logo from "../assets/WhatsApp  Image 2025-03-17 at 12.05.43 PM.jpeg";
 
 import { AiFillCodepenSquare } from "react-icons/ai";
 import Work from "./Work";
+import Contact from "./Contact";
 function Dashboard() {
   return (
     <div style={{ backgroundColor: "#001433", color: "white" }}>
@@ -101,8 +102,7 @@ function Dashboard() {
                             </div>
 
                      
-
-                            <div>
+                           <div>
                             <h3 className=' text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>
                                 1+
                             </h3>
@@ -142,6 +142,7 @@ function Dashboard() {
 
             {/* my work */}
              <Work/>
+             <Contact/>
     </div>
   );
 }
