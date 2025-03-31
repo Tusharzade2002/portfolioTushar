@@ -14,10 +14,10 @@ function Footer() {
          <FaGoogle className='mx-4'/>
          </div>
          <div class="flex items-center justify-center mt-4">
-            <Link className='mx-6'>Home</Link>
-            <Link className='mx-6'>Work</Link>
-            <Link className='mx-6'>Service</Link>
-            <Link className='mx-6'>Contact</Link>
+            <Link className='mx-4 md:mx-6'>Home</Link>
+            <Link className='mx-4 md:mx-6'>Work</Link>
+            <Link className='mx-4 md:mx-6'>Service</Link>
+            <Link className='mx-4 md:mx-6'>Contact</Link>
          </div>
     </div>
   )

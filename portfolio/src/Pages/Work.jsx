@@ -5,8 +5,8 @@ function Work() {
         
         
      <div> 
-        <h1 class="text-center font-black text-5xl my-4 ">My Work</h1>
-                <div class="flex flex-col md:flex-row">
+        <h1 class="text-center font-black text-5xl my-5 ">My Work</h1>
+                <div class="flex flex-col md:flex-row md:mx-10">
                        <div class="bg-gray-800 m-4 rounded-md ">
                              <img src={imgs} alt="..."/>
                              <span class="m-5 text-xl font-medium ">Study Website</span>

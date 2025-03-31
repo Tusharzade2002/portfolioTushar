@@ -3,7 +3,7 @@ import logo from '../assets/WhatsApp  Image 2025-03-17 at 12.05.43 PM.jpeg'
 function About() {
   return (
     <div class="mt-5">
-        <h1 class="text-center font-black text-5xl ">About </h1>
+        <h1 class="text-center font-black text-5xl my-5 ">About </h1>
         <div class=" flex flex-col items-center md:flex-row md:space-x-12 md:ms-5 ">
           <div>
             <img class="w-60 h-40" src={logo} alt="..." 
