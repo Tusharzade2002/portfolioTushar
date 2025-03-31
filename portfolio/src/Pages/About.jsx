@@ -22,7 +22,7 @@ function About() {
                 <label htmlFor="htmlandcss" className=" text-center ">
                   <p>HTML & CSS</p>
                 </label>
-                <div className=" ms-5 grow bg-gray-800 rounded-full h-2.5 w-60 sm:w-80">
+                <div className=" ms-5 grow bg-gray-800 rounded-full h-2.5 w-60 sm:w-80 ">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
                                      transform transition-transform duration-300 hover:scale-105 w-10/12"
@@ -38,7 +38,7 @@ function About() {
                 <label htmlFor="htmlandcss" className=" text-center">
                  <p class="text-center"> React Js</p>
                 </label>
-                <div className=" ms-5 grow bg-gray-800 rounded-full h-2.5 w-60 sm:w-80">
+                <div className=" ms-5 grow bg-gray-800 rounded-full h-2.5 w-60 sm:w-80 ">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
                                      transform transition-transform duration-300 hover:scale-105 w-11/12"
@@ -51,7 +51,7 @@ function About() {
                 <label htmlFor="htmlandcss" className=" text-center">
                  <p class="block mx-auto"> JavaScript</p>
                 </label>
-                <div className="  grow bg-gray-800 rounded-full h-2.5 w-60 sm:w-80">
+                <div className="  grow bg-gray-800 rounded-full h-2.5 w-60 sm:w-80 ">
                   <div
                     className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
                                      transform transition-transform duration-300 hover:scale-105 w-8/12"
@@ -61,7 +61,7 @@ function About() {
             </div>
     
       </div>      
-            <div className='flex flex-col   justify-between mt-12 text-center md:flex-row me-3'>
+            <div className='flex flex-col  justify-around mt-12 text-center md:flex-row me-3'>
                             <div>
                                 <h3 className='text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500'>
                                     3+

@@ -11,13 +11,13 @@ function Dashboard() {
         <div>
           <img
             style={{ width: "200px", height: "200px" }}
-            class="rounded-full object-cover"
+            class="rounded-full object-cover my-10"
             src={logo}
             alt=""
           />
         </div>
         <div>
-          <h2 class="text-center  font-bold">Tushar Zade</h2>
+          <h2 class="text-center text-3xl font-bold">Tushar Zade</h2>
           <h4>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
             aperiam?

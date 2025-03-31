@@ -6,40 +6,40 @@ function Contact() {
   return (
     <div>
         <h1 class="text-center font-black text-5xl my-4 ">Contact Me</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ipsam in nesciunt impedit eius iste accusamus fuga ab officiis eligendi.</p>
-        <div class="flex flex-col">
+        <p class="p-4 md:p-10 items-start">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ipsam in nesciunt impedit eius iste accusamus fuga ab officiis eligendi.</p>
+        <div class="flex flex-col items-center md:flex-row md:justify-around">
           <div>
-            <div class="flex items-center">
-              <div class="w-5 h-5 rounded-xl align-center bg-indigo-600" >
-                  <MdAddIcCall />
+            <div class="flex items-center m-3">
+              <div class="w-8 h-8 rounded-full  flex items-center justify-center bg-indigo-600" >
+                  <MdAddIcCall size={25}/>
               </div>
-              <div>
+              <div class="ms-5">
                        <p>Call Me</p>
                        <p>91+ 0987654321</p>
                </div>
             </div>
-            <div class="flex items-center">
-              <div>
-                       <MdEmail />         
+            <div class="flex items-center m-3">
+              <div class="w-8 h-8 rounded-full  flex items-center justify-center bg-indigo-600">
+                       <MdEmail size={25}/>         
               </div>
-              <div>
+              <div class="ms-5">
                 
                        <p>Email</p>
                        <p>tusharzade29@gmail.com</p>
                </div>
             </div>
-            <div class="flex items-center">
-              <div>
-                     <IoLocation />
+            <div class="flex items-center m-3">
+              <div class="w-8 h-8 rounded-full  flex items-center justify-center bg-indigo-600">
+                     <IoLocation size={25}/>
               </div>
-              <div>
+              <div class="ms-5">
                   <p>Address</p>
                   <p>Butibori ,Nagpur</p>
                      
                </div>
             </div>
            </div>
-           <div>
+           <div class="flex flex-col">
                 <input className='m-3' type='text'/>
                 <input className='m-3' type='text'/>
                 <input className='m-3' type='text'/>
