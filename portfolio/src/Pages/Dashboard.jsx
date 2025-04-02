@@ -5,35 +5,53 @@ import Contact from "./Contact";
 import Service from "./Service";
 import About from "./About";
 import Footer from "../Layout/Footer";
+import { FaDownload } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import './main.css'
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { IoLogoInstagram } from "react-icons/io5";
+import { MdOutlineMailOutline } from "react-icons/md";
+import dev from '../assets/devpng.png'
 function Dashboard() {
   return (
-    <div style={{ backgroundColor: "#001433", color: "white" }}>
-      <div class="flex  items-center flex-col">
-        <div>
-          <img
-            style={{ width: "200px", height: "200px" }}
-            class="rounded-full object-cover my-10"
-            src={logo}
-            alt=""
-          />
-        </div>
-        <div>
-          <h2 class="text-center text-3xl font-bold">Tushar Zade</h2>
-          <h4>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In,
-            aperiam?
-          </h4>
-        </div>
+    <motion.div 
+       initial={{opacity:0,y:-50}}
+       animate={{opacity:1,y:0}}
+       transition={{duration:1}}
+    style={{ backgroundColor: "#081b29", color: "white" }}>
+      <div class="flex p-3">
+         <div> 
+                 <div>
+                   <p>Hello ,it's me</p>
+                   <p>Tushar Zade</p>
+                   <p style={{color:"#00f0e0"}}>Frontend Developer</p>
+                 </div>
+                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, in sed incidunt eius commodi temporibus? Iure placeat, sunt fugiat pariatur fuga sint modi ducimus alias aperiam, totam quam harum dicta.</div>
+                  <div className="flex" style={{color:"#00f0e0"}}>
+                     <FaGithub />
+                     <FaLinkedin />
+                     <IoLogoInstagram />
+                     <MdOutlineMailOutline />
+                  </div>
+                  <div className="flex"> 
+                    <div>Download CV</div>
+                    <div>Let's Talk</div>
+                  </div>
+         </div>
+
+         <div>
+          <img src={dev}/>
+         </div>
+                         
       </div>
 {/* ABOUT Page */}
-      
-       <About/>
-
+             <About/>
              <Work/>
              <Service/>
              <Contact/>
             
-    </div>
+    </motion.div>
   );
 }
 

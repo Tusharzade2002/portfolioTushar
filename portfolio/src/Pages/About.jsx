@@ -2,7 +2,7 @@ import React from 'react'
 import logo from '../assets/WhatsApp  Image 2025-03-17 at 12.05.43 PM.jpeg'
 function About() {
   return (
-    <div style={{backgroundColor:"#001433"}}>
+    <div style={{backgroundColor:"#042c30"}}>
         <h1 class="text-center font-black text-5xl py-5 ">About </h1>
         <div class=" flex flex-col items-center md:flex-row md:space-x-12 md:ms-5 ">
           <div>
@@ -10,7 +10,7 @@ function About() {
             className="object-cover mb-8 rounded w-72 h-80 md:mb-0 md-8"/>
           </div>
           <div class="flex-1">
-            <p className="mb-8 text-lg">
+            <p className="mb-8 text-lg text-center p-3">
               {" "}
               I am a passionate front-end developer with a focus on building
               modern and responsive web applications. With a Strong foundation

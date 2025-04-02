@@ -1,6 +1,8 @@
 import React, { use, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/WhatsApp  Image 2025-03-17 at 12.05.43 PM.jpeg'
+import { FaDownload } from "react-icons/fa6";
+import { motion } from "framer-motion";
 function Navbar() {
     const [MobileNav , SetMobileNav]=useState(false)
     const [isopenButton ,setisopenButton]=useState(false)
@@ -13,8 +15,12 @@ function Navbar() {
         
     }
   return (
-    <div>
-        <nav class="bg-gray-800">
+    <motion.div
+    initial={{opacity:0,y:-50}}
+    animate={{opacity:1,y:0}}
+    transition={{duration:1}}
+    >
+        <nav style={{backgroundColor:"#081b29"}}>
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -30,11 +36,6 @@ function Navbar() {
           <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
-          {/* <!--
-            Icon when menu is open.
-
-            Menu open: "block", Menu closed: "hidden"
-          --> */}
           <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
           </svg>
@@ -42,7 +43,12 @@ function Navbar() {
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex shrink-0 items-center">
-          <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
+         <button className=' flex transition-transform duration-300 transform rounded-full bg-gradient-to-r from-green-400 to-blue-500 md:inline hover:scale-110 animate-slide-in-delay p-2 text-zinc-50 items-center'>  
+              <div className='flex items-center'>
+                      <FaDownload  className='me-2'/>
+                      <a href='https://drive.google.com/uc?export=download&id=1o-6xI157ibUk8l6Nvh8SAw9442NLhR7L'> Download CV</a>
+              </div>
+        </button>
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4 " >
@@ -98,14 +104,14 @@ function Navbar() {
   <div class={`sm:hidden ${MobileNav ? "block":"hidden"}`} id="mobile-menu">
     <div class="space-y-1 px-2 pt-2 pb-3">
       {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-      <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+      <Link to="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</Link>
+      <Link to='/about' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
+      <Link to='/work' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Work</Link>
+      <Link to="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
     </div>
   </div>
 </nav>
-    </div>
+    </motion.div>
   )
 }
 
