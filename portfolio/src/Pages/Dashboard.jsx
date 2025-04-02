@@ -13,6 +13,8 @@ import { FaGithub } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import dev from '../assets/devpng.png'
+import { Link } from "react-router-dom";
+import Button from "../Component/Button";
 function Dashboard() {
   return (
     <motion.div 
@@ -20,28 +22,28 @@ function Dashboard() {
        animate={{opacity:1,y:0}}
        transition={{duration:1}}
     style={{ backgroundColor: "#081b29", color: "white" }}>
-      <div class="flex p-3">
+      <div class="flex px-5 flex-col md:flex-row md:px-[85px]  md:py-10">
          <div> 
                  <div>
-                   <p>Hello ,it's me</p>
-                   <p>Tushar Zade</p>
-                   <p style={{color:"#00f0e0"}}>Frontend Developer</p>
+                   <p className="text-2xl my-4">Hello ,it's me</p>
+                   <p className="text-5xl my-4">Tushar Zade</p>
+                   <p className="text-3xl my-4" style={{color:"#00f0e0"}}>Frontend Developer</p>
                  </div>
-                 <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, in sed incidunt eius commodi temporibus? Iure placeat, sunt fugiat pariatur fuga sint modi ducimus alias aperiam, totam quam harum dicta.</div>
-                  <div className="flex" style={{color:"#00f0e0"}}>
-                     <FaGithub />
-                     <FaLinkedin />
-                     <IoLogoInstagram />
-                     <MdOutlineMailOutline />
+                 <div className="text-xl my-6">Hello ! I'm Tushar, a passionate and driven Frontend Developer and open source contributor. With a background in Information Technology Engineering program. I truly enjoy working in a team and always willing to learn new things.</div>
+                  <div className="flex my-4" style={{color:"#00f0e0"}}>
+                    <Link to="https://github.com/Tusharzade2002" target="blank"> <FaGithub size={35}  className="m-2"/></Link>
+                    <Link to="https://www.linkedin.com/"> <FaLinkedin size={35} className="m-2"/></Link>
+                    <Link to=""> <IoLogoInstagram size={35} className="m-2"/></Link>
+                    <Link to=""> <MdOutlineMailOutline size={35} className="m-2"/></Link>
                   </div>
-                  <div className="flex"> 
-                    <div>Download CV</div>
-                    <div>Let's Talk</div>
+                  <div className="flex md:my-6"> 
+                  <Button/>
+                   <Link className="border-2 px-2 py-2 text-teal-200 md:px-6 md:py-2 border-teal-400 rounded-full md:text-xl" to="/contact" >Let's Talk</Link>
                   </div>
          </div>
 
-         <div>
-          <img src={dev}/>
+         <div className="flex md:w-[950px] md:h-[450px]"> 
+             <img className="dev-pic" src={dev}/>
          </div>
                          
       </div>
