@@ -36,7 +36,7 @@ function Dashboard() {
                     <Link to=""> <IoLogoInstagram size={35} className="m-2"/></Link>
                     <Link to=""> <MdOutlineMailOutline size={35} className="m-2"/></Link>
                   </div>
-                  <div className="flex md:my-6"> 
+                  <div className="flex md:my-10"> 
                   <Button/>
                    <Link className="border-2 px-2 py-2 text-teal-200 md:px-6 md:py-2 border-teal-400 rounded-full md:text-xl" to="/contact" >Let's Talk</Link>
                   </div>
