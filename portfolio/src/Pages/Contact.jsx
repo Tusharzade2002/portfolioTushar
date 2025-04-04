@@ -3,7 +3,7 @@ import {Send} from 'lucide-react'
 import {motion} from 'framer-motion'
 function Contact() {
   return (
-    <motion.div style={{backgroundColor:"#001433"}}>
+    <motion.div style={{backgroundColor:"#001433"}} className='pt-10'>
         <motion.h1 
           initial={{ y: -100, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }} 
@@ -12,7 +12,9 @@ function Contact() {
          <p className='text-teal-400 ms-3'> Me  !</p>
    </motion.h1>
         <motion.div 
-       
+       initial={{ y: 100, opacity: 0 }} 
+       whileInView={{ y: 0, opacity: 1 }} 
+       transition={{ duration: 0.5, ease: "easeIn" }}
         className='flex flex-col items-center justify-center px-6 ' >
           <div className='flex flex-col relative'>
                  <div className='flex flex-col items-center sm:flex-row md:my-5'>
