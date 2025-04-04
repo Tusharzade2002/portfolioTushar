@@ -7,7 +7,8 @@ import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <div className='py-4 text-white'>
-         <div class="flex items-center justify-center">
+      <hr></hr>
+         <div class="flex items-center justify-center pt-3">
          <IoLogoInstagram  className='mx-4'/>
          <FaFacebook className='mx-4'/>
          <FaTwitter className='mx-4'/>
