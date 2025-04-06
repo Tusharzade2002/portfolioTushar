@@ -23,7 +23,9 @@ function Dashboard() {
        transition={{duration:1}}
     style={{ backgroundColor: "#081b29", color: "white" }}>
       <div class="flex px-5 flex-col md:flex-row md:px-[85px]  md:py-10">
-         <div> 
+         < motion.div   initial={{ y: -100, opacity: 0 }} // Start above and invisible
+                            whileInView={{ y: 0, opacity: 1 }} // Animate when visible
+                            transition={{ duration: 0.5, ease: "easeIn" }}> 
                  <div>
                    <p className="text-2xl my-4">Hello ,it's me</p>
                    <p className="text-5xl my-4">Tushar Zade</p>
@@ -40,7 +42,7 @@ function Dashboard() {
                   <Button/>
                    <Link className="border-2 px-2 py-2 text-teal-200 md:px-6 md:py-2 border-teal-400 rounded-full md:text-xl" to="/contact" >Let's Talk</Link>
                   </div>
-         </div>
+         </motion.div>
 
          <div className="flex md:w-[950px] md:h-[450px]"> 
              <img className="dev-pic" src={dev}/>

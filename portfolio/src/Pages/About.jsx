@@ -37,7 +37,9 @@ function About() {
                       </motion.p>
 
                    <motion.div  
-             
+              initial={{ y: 100, opacity: 0 }} // Start below and invisible
+              whileInView={{ y: 0, opacity: 1 }} // Animate when visible
+              transition={{ duration: 0.5, ease: "easeIn" }}
                    className='px-8 py-8 text-sm text-start md:px-[100px] md:py-10 md:text-xl'> 
                    Engaging actively within the open-source community has been a profoundly fulfilling journey. I firmly embrace the value of teamwork and find it imperative to contribute to the developer community that has provided me with a wealth of insights. By consistently dedicating my efforts to open-source projects, I continuously expand my learning horizons and exchange valuable perspectives with colleagues worldwide.
 I'm always excited to connect with fellow developers, designers, and enthusiasts. Whether it's discussing new ideas, collaborating on projects, or exploring opportunities, feel free to reach out to me. Together, we can make the web a more delightful and accessible place.

@@ -41,9 +41,9 @@ function Navbar() {
           </svg>
         </button>
       </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
         <div class="flex shrink-0 items-center">
-          <p className='text-white font-semibold text-2xl'>T Z</p>
+          <p className='text-white font-semibold ms-10 text-2xl'>T Z</p>
          <button className='  mt-3 flex transition-transform duration-300 transform rounded-full bg-gradient-to-r from-green-400 to-blue-500 md:inline hover:scale-110 animate-slide-in-delay p-1 text-zinc-50 items-center'>  
            
         </button>
@@ -52,7 +52,7 @@ function Navbar() {
           <div class="flex space-x-4 " >
             <Link to="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Portfolio</Link>
             <Link to="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
-            <Link to="/work" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Work</Link>
+            <Link to="/education" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Eduation</Link>
             <Link to="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
           </div>
         </div>
@@ -80,13 +80,13 @@ function Navbar() {
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
           --> */}
-          <div  class={` absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5   ${isopenButton ? "block": "hidden"}`} 
+          {/* <div  class={` absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5   ${isopenButton ? "block": "hidden"}`} 
                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" 
                tabindex="-1"  >
             <Link to="/profile" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</Link>
             <Link to="/setting" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</Link>
             <Link to="/Signout" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
@@ -98,11 +98,12 @@ function Navbar() {
       {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
       <Link to="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</Link>
       <Link to='/about' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
-      <Link to='/work' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Work</Link>
+      <Link to='/education' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Education</Link>
       <Link to="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
     </div>
   </div>
 </nav>
+<hr></hr>
     </motion.div>
   )
 }

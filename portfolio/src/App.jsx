@@ -20,7 +20,7 @@ function App() {
         <Routes class="bg-gray-800">
           <Route path='/' element={<Dashboard/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='/work' element={<Work/>}/>
+          <Route path='/education' element={<Work/>}/>
           <Route path='/service' element={<Service/>}/>
           <Route path='/contact' element={<Contact/>}/>
         </Routes>
