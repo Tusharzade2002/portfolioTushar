@@ -8,11 +8,15 @@ function Work() {
         
      <div style={{backgroundColor:"#001433"}} className='py-10'> 
         <motion.h1 
-        
+         initial={{ y: -100, opacity: 0 }} // Start above and invisible
+         whileInView={{ y: 0, opacity: 1 }} // Animate when visible
+         transition={{ duration: 0.5, ease: "easeIn" }}
            class="text-center text-5xl  text-white py-6 ">Education
         </motion.h1>
             <motion.div 
-             
+              initial={{ y: 100, opacity: 0 }} // Start below and invisible
+              whileInView={{ y: 0, opacity: 1 }} // Animate when visible
+              transition={{ duration: 0.5, ease: "easeIn" }}
             className='flex  justify-center flex-wrap max-w-210'>
                 <div className=' content w-[500px] text-white p-5 m-7 '>
                   <div className='flex text-teal-300'>
