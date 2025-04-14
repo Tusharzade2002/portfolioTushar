@@ -1,31 +1,27 @@
 import React from 'react'
-import { AiFillCodepenSquare } from "react-icons/ai";
+import {CalendarDays} from 'lucide-react';
+import projectimg from '../assets/Screenshot 2025-04-08 113842.png'
+
 function Service() {
   return (
     <div style={{backgroundColor:"#042c30"}}>
-    <h1 class="text-center font-black text-5xl py-10">Projects</h1>
-    <div class=" flex flex-col sm:flex-row md:mx-5 ">
-        <div class="m-3 p-2 w-50  bg-blue-950 rounded-md">
-           <AiFillCodepenSquare size={60} class="text-purple-800 bg-transparent"/>
-           <h1 class="font-semibold text-3xl p-5">Web Design</h1>
-           <p class=" text-xl p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quia magnam minus adipisci placeat recusandae hic! Repellat quasi dolores adipisci!</p>
-           <button class="text-purple-800 p-5">Learn More</button>
-        </div>
+    <h1 class="text-center  text-5xl py-10">Projects</h1>
+    <div 
+              initial={{ y: 100, opacity: 0 }} // Start below and invisible
+              whileInView={{ y: 0, opacity: 1 }} // Animate when visible
+              transition={{ duration: 0.5, ease: "easeIn" }}
+            className='flex  justify-center flex-wrap max-w-210'>
+                <div className=' content w-[500px] text-black p-5 m-7 '>
+                  <div className='flex text-teal-300'>
+                         <img className='rounded-xl' src={projectimg}/>
+                  </div>
+                      <div className='text-white'>
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, placeat? Iusto minus, dolores ea unde deserunt provident officiis sunt accusamus!
+                      </div>
+                </div> 
 
-        <div class="m-3 p-2 w-50  bg-blue-950  rounded-md">
-           <AiFillCodepenSquare size={60} class="text-purple-800 bg-transparent"/>
-           <h1 class="font-semibold text-3xl p-5">Web Design</h1>
-           <p class=" text-xl p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quia magnam minus adipisci placeat recusandae hic! Repellat quasi dolores adipisci!</p>
-           <button class="text-purple-800 p-5">Learn More</button>
-        </div>
-
-        <div class="m-3 p-2 w-50 bg-blue-950 rounded-md">
-           <AiFillCodepenSquare size={60} class=" text-purple-800 bg-transparent"/>
-           <h1 class="font-semibold text-3xl p-5">Web Design</h1>
-           <p class=" text-xl p-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, quia magnam minus adipisci placeat recusandae hic! Repellat quasi dolores adipisci!</p>
-           <button class="text-purple-800 p-5">Learn More</button>
-        </div>
-    </div>
+                          
+           </div> 
 </div>
   )
 }

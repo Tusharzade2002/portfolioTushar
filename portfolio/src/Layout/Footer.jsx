@@ -7,18 +7,19 @@ import {Link} from 'react-router-dom'
 function Footer() {
   return (
     <div className='py-4 text-white'>
-      <hr></hr>
+      <hr className='bg-black'></hr>
          <div class="flex items-center justify-center pt-3">
-         <IoLogoInstagram  className='mx-4 hover:text-teal-300'/>
-         <FaFacebook className='mx-4 hover:text-teal-300'/>
-         <FaTwitter className='mx-4 hover:text-teal-300'/>
-         <FaGoogle className='mx-4 hover:text-teal-300'/>
+         <IoLogoInstagram  className='mx-4 text-teal-300 hover:text-white'/>
+         <FaFacebook className='mx-4 text-teal-300 hover:text-white'/>
+         <FaTwitter className='mx-4 text-teal-300 hover:text-white'/>
+         <FaGoogle className='mx-4 text-teal-300 hover:text-white'/>
          </div>
          <div class="flex items-center justify-center mt-4">
-            <Link to="/" className='mx-4 md:mx-6 hover:text-teal-300'>Home</Link>
-            <Link to="/work" className='mx-4 md:mx-6 hover:text-teal-300'>Work</Link>
-            <Link to="/service" className='mx-4 md:mx-6 hover:text-teal-300'>Service</Link>
-            <Link to="/contact" className='mx-4 md:mx-6 hover:text-teal-300'>Contact</Link>
+            <Link to="/" className='mx-1 md:mx-6 text-teal-300 hover:text-white'>Home</Link>
+            <Link to="/about" className='mx-1 md:mx-6 text-teal-300 hover:text-white'>About</Link>
+            <Link to="/education" className='mx-1 md:mx-6 text-teal-300 hover:text-white'>education</Link>
+            <Link to="/service" className='mx-1 md:mx-6 text-teal-300 hover:text-white'>project</Link>
+            <Link to="/contact" className='mx-1 md:mx-6 text-teal-300 hover:text-white'>Contact</Link>
          </div>
     </div>
   )

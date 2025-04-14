@@ -50,9 +50,16 @@ function Work() {
                          <CalendarDays />
                          <p className='ms-3'>2023-2025</p>
                     </div>
-                      <p className='text-2xl my-5'>HSC</p>
+                      <p className='text-2xl my-5'>Master's of Computer Application</p>
                       <p className='text-xl'>74%</p>
                 </div> 
+                {/* <div className="relative inline-block group px-4 py-2 font-semibold text-white overflow-hidden">
+      <span className="relative z-10">Hover Me</span>
+      
+      <span className="absolute bottom-0 left-0 h-10 w-0 bg-blue-500 
+                       group-hover:w-full transition-all duration-500 ease-in-out z-0">hover
+      </span>
+    </div> */}
            </motion.div>         
     </div>
   

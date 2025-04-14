@@ -42,18 +42,21 @@ function Navbar() {
         </button>
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+        <Link to='/'>
         <div class="flex shrink-0 items-center">
           <p className='text-white font-semibold ms-10 text-2xl'>T Z</p>
          <button className='  mt-3 flex transition-transform duration-300 transform rounded-full bg-gradient-to-r from-green-400 to-blue-500 md:inline hover:scale-110 animate-slide-in-delay p-1 text-zinc-50 items-center'>  
            
-        </button>
+         </button>
         </div>
+        </Link>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4 " >
-            <Link to="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Portfolio</Link>
-            <Link to="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
-            <Link to="/education" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Eduation</Link>
-            <Link to="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
+            <Link to="/" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white hover:text-teal-300" aria-current="page">Portfolio</Link>
+            <Link to="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-300 ">About</Link>
+            <Link to="/education" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-300">Eduation</Link>
+            <Link to="/service " class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-300">Project</Link>
+            <Link to="/contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:text-teal-300">Contact</Link>
           </div>
         </div>
       </div>
@@ -96,10 +99,11 @@ function Navbar() {
   <div class={`sm:hidden ${MobileNav ? "block":"hidden"}`} id="mobile-menu">
     <div class="space-y-1 px-2 pt-2 pb-3">
       {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-      <Link to="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</Link>
-      <Link to='/about' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</Link>
-      <Link to='/education' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Education</Link>
-      <Link to="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
+      <Link to="/" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white hover:text-teal-300" aria-current="page">Portfolio</Link>
+      <Link to='/about' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-teal-300">About</Link>
+      <Link to='/education' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-teal-300">Education</Link>
+      <Link to='/service' class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-teal-300">Projects</Link>
+      <Link to="/contact" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-teal-300">Contact</Link>
     </div>
   </div>
 </nav>
