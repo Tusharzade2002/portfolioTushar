@@ -51,7 +51,7 @@ function Work() {
                          <p className='ms-3'>2023-2025</p>
                     </div>
                       <p className='text-2xl my-5'>Master's of Computer Application</p>
-                      <p className='text-xl'>74%</p>
+                      <p className='text-xl'>I am currently pursuing my Master’s degree in Computer Applications (MCA) from Tulsiramji Gaikwad patail college, demonstrating my ongoing commitment to advancing my knowledge and skills in the field of computer science.</p>
                 </div> 
                 {/* <div className="relative inline-block group px-4 py-2 font-semibold text-white overflow-hidden">
       <span className="relative z-10">Hover Me</span>
