@@ -9,6 +9,7 @@ import Work from './Pages/Work'
 import Service from './Pages/Service'
 import Contact from './Pages/Contact'
 import Footer from './Layout/Footer'
+import Skills from './Pages/Skills'
 function App() {
   
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/education' element={<Work/>}/>
           <Route path='/service' element={<Service/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/skills' element={<Skills/>}/>
         </Routes>
       </div>
      <div style={{backgroundColor:"#001433"}}> <Footer /> </div>

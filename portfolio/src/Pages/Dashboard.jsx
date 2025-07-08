@@ -15,6 +15,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 import dev from '../assets/devpng.png'
 import { Link } from "react-router-dom";
 import Button from "../Component/Button";
+import Skills from "./Skills";
 function Dashboard() {
   return (
     <motion.div 
@@ -53,7 +54,9 @@ function Dashboard() {
              <About/>
              <Work/>
              <Service/>
+             <Skills/>
              <Contact/>
+             
             
     </motion.div>
   );

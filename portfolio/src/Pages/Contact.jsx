@@ -3,7 +3,7 @@ import {Send} from 'lucide-react'
 import {motion} from 'framer-motion'
 function Contact() {
   return (
-    <motion.div style={{backgroundColor:"#001433"}} className='pt-10'>
+    <motion.div style={{backgroundColor:"#042c30"}} className='pt-10'>
         <motion.h1 
           initial={{ y: -100, opacity: 0 }} 
           whileInView={{ y: 0, opacity: 1 }} 
